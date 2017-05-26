@@ -34,8 +34,10 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
 * Manter e otimizar estrutura de tabela.
 
 
+## Estrutura das tabelas 
+A estrutura é imutável.
 
-### Tabela de envio
+#### Tabela de envio
 ```
 {
     "_id" : ObjectId("59088b68d5871782053dea1d"),
@@ -86,7 +88,7 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
 }
 ```
 
-###Tabela de pedidos
+#### Tabela de pedidos
 ```
 {
     "_id" : ObjectId("58812f470afc6661ae665e3f"),
@@ -110,7 +112,7 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
 }
 ```
 
-### Tabela de produtos
+#### Tabela de produtos
 ```
 {
     "_id" : ObjectId("584c4753cd2f5b713808e334"),
