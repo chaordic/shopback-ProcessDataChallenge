@@ -83,8 +83,8 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
     ],
     "updated_at" : ISODate("2017-04-01T00:55:25.000Z"),
     "created_at" : ISODate("2017-03-31T21:24:46.000Z")
-}```
-
+}
+```
 
 ###Tabela de pedidos
 ```
@@ -109,7 +109,6 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
     "created_at" : ISODate("2017-01-19T21:27:35.000Z")
 }
 ```
-
 
 ### Tabela de produtos
 ```
