@@ -107,7 +107,8 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
     "anonymous" : false,
     "updated_at" : ISODate("2017-01-19T21:27:35.000Z"),
     "created_at" : ISODate("2017-01-19T21:27:35.000Z")
-}```
+}
+```
 
 
 ### Tabela de produtos
@@ -135,4 +136,5 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
     "updated_at" : ISODate("2017-05-26T06:40:32.000Z"),
     "created_at" : ISODate("2016-12-10T18:20:02.000Z"),
     "synced" : true
-}```
+}
+```
