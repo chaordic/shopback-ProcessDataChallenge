@@ -8,17 +8,18 @@ Tendo como base um banco nosql, temos que processar as informações de todas ta
 O imporante é que o script consuma a menor quantidade de recursos do servidor, seja de fácil entendimento e manutenção
 
 ## Tabelas:
-1) O banco a primeira tabela tem mais 100 milhões de registros e de envios
-2) A tabela de usuário tem mais de 30 milhões de registros
+1) O banco a primeira tabela tem mais 100 milhões de registros e de envios.
+2) A tabela de usuário tem mais de 30 milhões de registros.
 3) A terceira tabela contém os valores de pedidos de venda.
-4) A quarta tabela contém o produto e categoria
+4) A quarta tabela contém os carrinhos e produtos.
+5) A quinta tabela contém o produto e categoria.
 
 ## Resultados:
 
 #### A nova tabela deve conter:
 * Perfil de gastos mensal.
 * Perfil de gastos por categoria mensal.
-* Média dos ultimos 3 meses de gastos mensal.
+* Média dos últimos 3 meses de gastos mensal.
 * Média dos últimos 3 meses por categoria mensal.
 * Informações de usuários.
 
@@ -91,13 +92,13 @@ A estrutura é imutável.
 #### Tabela de pedidos
 ```
 {
-    "_id" : ObjectId("58812f470afc6661ae665e3f"),
-    "client_id" : "57dad183becd8a522620c05b",
-    "customer_id" : "58812f260afc6648213ebc95",
-    "cart_id" : false,
+    "_id" : ObjectId("58812ee70afc660de522c097"),
+    "client_id" : "56d484398a20ed6c41598e16",
+    "customer_id" : "58812e310afc660dbe1d0982",
+    "cart_id" : "58812eaa0afc660dc06a2278",
     "details" : {
-        "id" : 0,
-        "price" : 1
+        "id" : "704531573027",
+        "price" : 379.96
     },
     "info" : {
         "utm_source" : false,
@@ -107,11 +108,44 @@ A estrutura é imutável.
         "utm_content" : false
     },
     "anonymous" : false,
-    "updated_at" : ISODate("2017-01-19T21:27:35.000Z"),
-    "created_at" : ISODate("2017-01-19T21:27:35.000Z")
+    "updated_at" : ISODate("2017-01-19T21:25:59.000Z"),
+    "created_at" : ISODate("2017-01-19T21:25:59.000Z")
 }
 ```
+#### Tabela de carrinhos
 
+``` 
+{
+    "_id" : ObjectId("592872ad808c3c2a1d55204c"),
+    "client_id" : "56d48438d2c39468a21494a4",
+    "customer_id" : "59286c5b9d1b502aa37210a4",
+    "products" : [ 
+        {
+            "product_id" : "584c477ccd2f5b78d554dfbb",
+            "price" : 269.9,
+            "quantity" : 1.0
+        },
+        {
+            "product_id" : "584c477ccd2f5b78d554dfb1",
+            "price" : 268.9,
+            "quantity" : 3.0
+        }
+    ],
+    "amount" : 269.9,
+    "info" : {
+        "utm_source" : false,
+        "utm_medium" : false,
+        "utm_campaign" : false,
+        "utm_term" : false,
+        "utm_content" : false
+    },
+    "anonymous" : false,
+    "complete" : false,
+    "recovered" : false,
+    "updated_at" : ISODate("2017-05-26T18:24:21.000Z"),
+    "created_at" : ISODate("2017-05-26T18:23:41.000Z")
+}
+```
 #### Tabela de produtos
 ```
 {
