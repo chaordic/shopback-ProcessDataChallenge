@@ -7,6 +7,10 @@ Processamento e leitura de quantidade grande quantidade de dados
 Tendo como base um banco nosql, temos que processar as informações de todas tabelas e gerar uma nova tabela.
 O imporante é que o script consuma a menor quantidade de recursos do servidor, seja de fácil entendimento e manutenção
 
+Linguagem preferencial: PHP 
+Banco preferencial: Mongo
+Script deve ser escrito para ser executado em shell
+
 ## Tabelas:
 1) O banco a primeira tabela tem mais 100 milhões de registros e de envios.
 2) A tabela de usuário tem mais de 30 milhões de registros.
