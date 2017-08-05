@@ -9,14 +9,14 @@ O imporante é que o script consuma a menor quantidade de recursos do servidor, 
 
 Linguagem preferencial: PHP 
 Banco preferencial: Mongo
+
 Script deve ser escrito para ser executado em shell
 
 ## Tabelas:
-1) O banco a primeira tabela tem mais 100 milhões de registros e de envios.
-2) A tabela de usuário tem mais de 30 milhões de registros.
-3) A terceira tabela contém os valores de pedidos de venda.
-4) A quarta tabela contém os carrinhos e produtos.
-5) A quinta tabela contém o produto e categoria.
+1) A tabela de usuário tem mais de 30 milhões de registros.
+2) A terceira tabela contém os valores de pedidos de venda.
+3) A quarta tabela contém os carrinhos e produtos.
+4) A quinta tabela contém o produto e categoria.
 
 ## Resultados:
 
@@ -38,22 +38,8 @@ Script deve ser escrito para ser executado em shell
 * Tempo de leitura.
 * Manter e otimizar estrutura de tabela.
 
-
 ## Estrutura das tabelas 
 A estrutura é imutável.
-
-#### Tabela de envio
-```
-{
-    "_id" : ObjectId("59088b68d5871782053dea1d"),
-    "campaign_id" : "58827845cd2f5b103d0f5ba6",
-    "client_id" : "57587ad57fb83436bb594504",
-    "customer_id": "58d549d3808c3c0b89263d51",
-    "updated_at" : ISODate("2017-05-26T17:50:13.000Z"),
-    "created_at" : ISODate("2017-05-02T13:36:40.000Z"),
-    "calls" : 91845
-}
-```
 
 ### Tabela com dados de usuário
 ```
